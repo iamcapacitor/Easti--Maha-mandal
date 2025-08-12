@@ -1,0 +1,118 @@
+.container {
+    border: 2px solid black;
+    width: 100vw;
+    height: 60vw;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/008/888/451/non_2x/horizontal-view-of-asphalt-road-with-bike-lense-background-of-trees-and-green-grass-with-puddle-and-mountain-under-the-blue-sky-vector.jpg');
+    background-repeat: repeat-x;
+    position: relative;
+    background-size: cover;
+    animation: track 10s linear 0s infinite forwards  ;
+
+}
+
+.box2 {
+    border: 2px solid brown;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 36%;
+}
+
+/* .box1,
+.carimg,
+.timg {
+    border: 2px solid rgba(255, 255, 0, 0);
+} */
+
+.box1 {
+    position: absolute;
+    bottom: 23%;
+    z-index: 1;
+    width: 41vw;
+    height: 18vw;
+
+}
+
+.innerbox {
+    height: 100%;
+    position: relative;
+    animation: riding 0.5s linear 0s infinite forwards ;
+}
+
+.carimg {
+    width: 100%;
+    position: absolute;
+    bottom: 0%;
+}
+
+.carimg img {
+    width: inherit;
+}
+
+.timg {
+    /* border: 2px solid brown; */
+    /* width: 12.43%;
+    height: 29%; */
+    width: 10.85%;
+    height: 25%;
+    position: absolute;
+    animation: wheels linear 0.5s  infinite forwards ;
+    
+}
+
+.t1 {
+    bottom: 1%;
+    left: 28.4%;
+}
+
+.t2 {
+    bottom: 1%;
+    right: 7.7%;
+}
+
+.timg img {
+    width: 100%;
+}
+
+.box2 {
+    border: 2px solid brown;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 36%;
+    background: url(/images/1.jpg);
+    background-repeat: repeat-x;
+    background-size: cover;
+    animation: track 2s linear 0s infinite forwards  ;
+}
+
+@keyframes wheels  {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes track {
+    100%{
+        background-position-x: -250pc;
+    }
+}
+@keyframes riding {
+    0%{
+        transform: translateY(0.5vw);
+    }
+    50%{
+        transform: translateY(-0.5vw);
+    }
+    100%{
+        transform: translateY(0.55vw);
+    }
+}
+
+
+/* mediaquery */
+@media screen and (max-width:1024px){
+    .box1{
+        width: 81vw;
+        height: 36vw;
+    }
+}
